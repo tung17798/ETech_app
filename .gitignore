@@ -68,9 +68,7 @@ buck-out/
 
 # Expo
 .expo/*
-bin/Exponent.app
-/android
-/ios
+bin/Exponent.ap
 expo-env.d.ts
 
 ## Secrets
@@ -90,8 +88,3 @@ web-build/
 
 # Yarn
 .yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions

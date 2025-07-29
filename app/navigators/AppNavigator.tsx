@@ -17,6 +17,7 @@ import { useAppTheme } from "@/theme/context"
 
 import { DemoNavigator, DemoTabParamList } from "./DemoNavigator"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
+import { WebViewEtechScreen } from "@/screens/webviewEtech"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -31,6 +32,7 @@ export type AppStackParamList = {
   Welcome: undefined
   Login: undefined
   Demo: NavigatorScreenParams<DemoTabParamList>
+  WebViewEtech: undefined
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
 }
@@ -65,9 +67,9 @@ const AppStack = () => {
           backgroundColor: colors.background,
         },
       }}
-      initialRouteName={isAuthenticated ? "Welcome" : "Login"}
+      initialRouteName={"WebViewEtech"}
     >
-      {isAuthenticated ? (
+      {/* {isAuthenticated ? (
         <>
           <Stack.Screen name="Welcome" component={WelcomeScreen} />
 
@@ -77,10 +79,8 @@ const AppStack = () => {
         <>
           <Stack.Screen name="Login" component={LoginScreen} />
         </>
-      )}
-
-      {/** 🔥 Your screens go here */}
-      {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
+      )} */}
+      <Stack.Screen name="WebViewEtech" component={WebViewEtechScreen} />
     </Stack.Navigator>
   )
 }
