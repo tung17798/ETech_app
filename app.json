@@ -40,7 +40,7 @@
         "image": "./assets/images/logo-icon.jpg",
         "imageWidth": 300,
         "resizeMode": "contain",
-        "backgroundColor": "#191015"
+        "backgroundColor": "#FFFFFF"
       }
     ],
     [
