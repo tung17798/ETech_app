@@ -11,7 +11,9 @@
   },
   "newArchEnabled": true,
   "jsEngine": "hermes",
-  "assetBundlePatterns": ["**/*"],
+  "assetBundlePatterns": [
+    "**/*"
+  ],
   "android": {
     "icon": "./assets/images/logo-icon.jpg",
     "package": "com.etechsolution.etech",
@@ -59,6 +61,9 @@
   "extra": {
     "ignite": {
       "version": "11.0.1"
+    },
+    "eas": {
+      "projectId": "a5c17946-b879-44af-8b79-73c1d638b3bf"
     }
   }
 }
